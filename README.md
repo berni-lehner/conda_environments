@@ -1,6 +1,10 @@
 # conda_environments
 Scripts to setup platform independent conda environments
 
+## Troubleshooting
+In case jupyter lab cannot connect to server, try updating prompt_toolkit:  
+conda update -c conda-forge prompt_toolkit
+
 ## Python 3.9 on UBUNTU
 conda create -y --name py39 python=3.9
 
