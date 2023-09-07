@@ -1,6 +1,8 @@
 # conda_environments
 Scripts to setup platform independent conda environments
 
+## Anaconda Environment location
+C:\Users\YOUR_USERNAME\anaconda3\envs
 
 ## Testing Pytorch in the activated environment
     python -m torch.utils.collect_env  
@@ -54,13 +56,17 @@ https://pillow.readthedocs.io/en/stable/installation.html
 
 
 ## Python 3.10 on WINDOWS 10
-conda create -y --name py310 python=3.10
+    conda create -y --name py310 python=3.10
+    conda activate py310
+    
+    conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+    conda install tensorflow
+    conda install -y -c conda-forge umap-learn albumentations jupyter pandas seaborn scipy natsort kneed pandas-profiling pyinstaller pyinstaller-hooks-contrib pytorch-model-summary shapely sweetviz tqdm umap-learn xgboost scikit-image scikit-learn scikit-optimize imbalanced-learn tabulate yapf skorch optuna celluloid scikit-learn-intelex pre-commit multicore-tsne opencv
+    conda install -y -c plotly plotly
 
-conda activate py310
+    pip install git+https://github.com/berni-lehner/zippee-ki-yay.git
 
-Install CUDA Toolkit 11.8.0
-Install cuDNN 8.6
-Get install cmd from https://pytorch.org/get-started/locally/
+    
 
 
 
