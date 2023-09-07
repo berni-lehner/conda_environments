@@ -1,23 +1,23 @@
 # conda_environments
 Scripts to setup platform independent conda environments
 
-## Testing Pytorch
-In the activated environment:
-  python -m torch.utils.collect_env  
 
-Or, within Python:
-  import torch
-  torch.backends.cudnn.enabled
-  torch.cuda.is_available()
-  torch.cuda.get.device_name(0)
+## Testing Pytorch in the activated environment
+    python -m torch.utils.collect_env  
+
+## Testing Pytorch in Python
+    import torch
+    torch.backends.cudnn.enabled
+    torch.cuda.is_available()
+    torch.cuda.get.device_name(0)
 
 ## Testing Tensorflow
-  import tensorflow as tf
-  tf.config.list_physical_devices('GPU')
+    import tensorflow as tf
+    tf.config.list_physical_devices('GPU')
 
 ## Troubleshooting
 In case jupyter lab cannot connect to server, try updating prompt_toolkit:  
-  conda update -c conda-forge prompt_toolkit
+    conda update -c conda-forge prompt_toolkit
 
 ### Tensorflow Compatibility List
 https://www.tensorflow.org/install/source#gpu
@@ -26,7 +26,7 @@ https://www.tensorflow.org/install/source#gpu
 https://anaconda.org/nvidia/cuda-toolkit
 
 ### List available cudnn versions
-  conda search -c anaconda cudnn
+    conda search -c anaconda cudnn
 
 ### Pytorch Compatibility
 https://pytorch.org/get-started/previous-versions/
