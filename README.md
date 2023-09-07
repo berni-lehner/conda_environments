@@ -3,21 +3,21 @@ Scripts to setup platform independent conda environments
 
 ## Testing Pytorch
 In the activated environment:
-python -m torch.utils.collect_env  
+  python -m torch.utils.collect_env  
 
 Or, within Python:
->>> import torch
->>> torch.backends.cudnn.enabled
->>> torch.cuda.is_available()
->>> torch.cuda.get.device_name(0)
+  import torch
+  torch.backends.cudnn.enabled
+  torch.cuda.is_available()
+  torch.cuda.get.device_name(0)
 
 ## Testing Tensorflow
->>> import tensorflow as tf
->>> tf.config.list_physical_devices('GPU')
+  import tensorflow as tf
+  tf.config.list_physical_devices('GPU')
 
 ## Troubleshooting
 In case jupyter lab cannot connect to server, try updating prompt_toolkit:  
-conda update -c conda-forge prompt_toolkit
+  conda update -c conda-forge prompt_toolkit
 
 ### Tensorflow Compatibility List
 https://www.tensorflow.org/install/source#gpu
@@ -26,7 +26,7 @@ https://www.tensorflow.org/install/source#gpu
 https://anaconda.org/nvidia/cuda-toolkit
 
 ### List available cudnn versions
-conda search -c anaconda cudnn
+  conda search -c anaconda cudnn
 
 ### Pytorch Compatibility
 https://pytorch.org/get-started/previous-versions/
@@ -38,17 +38,17 @@ https://pillow.readthedocs.io/en/stable/installation.html
 
 
 ## Python 3.9 on WINDOWS 10
-conda create -y --name py39 python=3.9
-
-conda activate py39
-
-conda install -c "nvidia/label/cuda-11.3.1" cuda-toolkit
-
-conda install -c nvidia cudnn=8.2.1
-
-conda install pytorch==1.11.0 torchvision==0.12.0 torchaudio==0.11.0 cudatoolkit=11.3 -c pytorch
-
-conda install tensorflow
+  conda create -y --name py39 python=3.9
+  
+  conda activate py39
+  
+  conda install -c "nvidia/label/cuda-11.3.1" cuda-toolkit
+  
+  conda install -c nvidia cudnn=8.2.1
+  
+  conda install pytorch==1.11.0 torchvision==0.12.0 torchaudio==0.11.0 cudatoolkit=11.3 -c pytorch
+  
+  conda install tensorflow
 
 ...
 
