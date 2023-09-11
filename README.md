@@ -2,7 +2,11 @@
 Scripts to setup platform independent conda environments
 
 ## Anaconda Environment location
+### Windows
 C:\Users\YOUR_USERNAME\anaconda3\envs
+
+### Linux
+/home/YOUR_USERNAME/anaconda3/envs/
 
 ## Testing Pytorch in the activated environment
     python -m torch.utils.collect_env  
@@ -11,7 +15,7 @@ C:\Users\YOUR_USERNAME\anaconda3\envs
     import torch
     torch.backends.cudnn.enabled
     torch.cuda.is_available()
-    torch.cuda.get.device_name(0)
+    torch.cuda.get_device_name(0)
 
 ## Testing Tensorflow
     import tensorflow as tf
@@ -41,15 +45,15 @@ https://pillow.readthedocs.io/en/stable/installation.html
 
 ## Python 3.9 on WINDOWS 10
   conda create -y --name py39 python=3.9
-  
+ 
   conda activate py39
-  
+ 
   conda install -c "nvidia/label/cuda-11.3.1" cuda-toolkit
-  
+ 
   conda install -c nvidia cudnn=8.2.1
-  
+ 
   conda install pytorch==1.11.0 torchvision==0.12.0 torchaudio==0.11.0 cudatoolkit=11.3 -c pytorch
-  
+ 
   conda install tensorflow
 
 ...
@@ -58,7 +62,7 @@ https://pillow.readthedocs.io/en/stable/installation.html
 ## Python 3.10 on WINDOWS 10
     conda create -y --name py310 python=3.10
     conda activate py310
-    
+   
     conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
     conda install tensorflow
     conda install -y -c conda-forge umap-learn albumentations jupyter pandas seaborn scipy natsort kneed pandas-profiling pyinstaller pyinstaller-hooks-contrib pytorch-model-summary shapely sweetviz tqdm umap-learn xgboost scikit-image scikit-learn scikit-optimize imbalanced-learn tabulate yapf skorch optuna celluloid scikit-learn-intelex pre-commit multicore-tsne opencv
@@ -66,7 +70,7 @@ https://pillow.readthedocs.io/en/stable/installation.html
 
     pip install git+https://github.com/berni-lehner/zippee-ki-yay.git
 
-    
+   
 
 
 
@@ -93,21 +97,20 @@ pip install git+https://github.com/berni-lehner/zippee-ki-yay.git
 
 
 ## Python 3.10 on UBUNTU
-conda create -y --name py310 python=3.10
+    conda create -y --name py310 python=3.10
 
-conda activate py310
+    conda activate py310
 
-conda install -y -c conda-forge umap-learn albumentations jupyter pandas seaborn
+    conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
 
-conda install -y scipy
+    conda install -y tensorflow
 
-conda install -y tensorflow
+    conda install -y -c conda-forge umap-learn jupyter pandas seaborn
 
-conda install -y pytorch torchvision torchaudio -c pytorch
+    conda install -y scipy
 
+    conda install -y -c conda-forge natsort kneed pandas-profiling pytorch-model-summary shapely tqdm xgboost scikit-image scikit-learn scikit-optimize imbalanced-learn skorch optuna pre-commit opencv
 
-conda install -y -c conda-forge natsort kneed pandas-profiling pyinstaller pyinstaller-hooks-contrib pytorch-model-summary shapely sweetviz tqdm xgboost scikit-image scikit-learn scikit-optimize imbalanced-learn tabulate yapf skorch optuna celluloid scikit-learn-intelex pre-commit multicore-tsne opencv
+    conda install -y -c plotly plotly
 
-conda install -y -c plotly plotly
-
-pip install git+https://github.com/berni-lehner/zippee-ki-yay.git
+    pip install git+https://github.com/berni-lehner/zippee-ki-yay.git
