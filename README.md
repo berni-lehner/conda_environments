@@ -65,7 +65,7 @@ https://pillow.readthedocs.io/en/stable/installation.html
    
     conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
     conda install tensorflow
-    conda install -y -c conda-forge umap-learn albumentations jupyter pandas seaborn scipy natsort kneed pandas-profiling pyinstaller pyinstaller-hooks-contrib pytorch-model-summary shapely lime sweetviz tqdm umap-learn xgboost scikit-image scikit-learn scikit-optimize imbalanced-learn tabulate yapf skorch optuna celluloid scikit-learn-intelex pre-commit multicore-tsne opencv
+    conda install -y -c conda-forge umap-learn albumentations jupyter pandas seaborn scipy natsort kneed pandas-profiling pyinstaller pyinstaller-hooks-contrib pytorch-model-summary shapely lime boruta_py sweetviz tqdm umap-learn xgboost scikit-image scikit-learn scikit-optimize imbalanced-learn tabulate yapf skorch optuna celluloid scikit-learn-intelex pre-commit multicore-tsne opencv
     conda install -y -c plotly plotly
 
     pip install git+https://github.com/berni-lehner/zippee-ki-yay.git
