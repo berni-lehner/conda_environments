@@ -70,7 +70,9 @@ https://pillow.readthedocs.io/en/stable/installation.html
 
     pip install git+https://github.com/berni-lehner/zippee-ki-yay.git
 
-   
+### Optional
+    conda install -c conda-forge wandb hydra-core torchmetrics torch-optimizer
+    conda install -c anaconda pytest
 
 
 
