@@ -73,6 +73,7 @@ https://pillow.readthedocs.io/en/stable/installation.html
 ### Optional
     conda install -c conda-forge wandb hydra-core torchmetrics torch-optimizer
     conda install -c anaconda pytest
+    conda install -y -c conda-forge datashader bokeh holoviews colorcet
 
 
 
